@@ -28,14 +28,73 @@ body {
 
 a {
     padding: 5px;
-
+color: black;
 }
 .cat_but {
     background-color: gray;
     margin: 5px;
     text-align: center;
-    text-decoration: none;
     color: white;
     padding: 10px;
     font-size: 20px;
+    text-decoration: none;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-rows: 4fr 1fr 2fr;
+  
+}
+.produkt_kort {
+  position: relative;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-row: 1/4;
+  margin: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.list_img {
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+}
+.soldout img {
+  opacity: 0.5;
+  filter: grayscale(50%);
+}
+
+.soldout_txt {position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: lightgray;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 5px 8px;
+  margin: 0;}
+
+  .sale_badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: crimson;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.old_price {
+  text-decoration: line-through;
+  color: #888;
+   margin: 0;
+}
+.new_price {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-top: 0;
 }
