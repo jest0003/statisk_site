@@ -18,8 +18,8 @@ function showProducts(data) {
             <p class="gray_txt">produkt</p>
             <p class="old_price">DKK ${product.price},-</p>
             <p class="new_price">DKK 559,-</p>
-            <a href="produkt.html">Read more</a>
-          </div>`
+            <a href="produkt.html?id=${product.id}">Read more</a>
+          </div></div>`
     });
     listContainer.innerHTML += markup;
 }
