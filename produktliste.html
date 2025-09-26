@@ -4,54 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="layout.css" />
+    <script src="listview.js" defer></script>
     <title>Produktliste</title>
   </head>
   <body>
-    <header><section class="flex_r_inbetween">
+    <header>
+      <section class="flex_r_inbetween">
         <h1>FashionRus</h1>
         <div><a href="index.html">Categories</a><a href="">Brands</a><a href="">Seasons</a></div>
-      </section></header>
+      </section>
+    </header>
     <main>
       <h2>Sporting Goods</h2>
-      <section class="container">
-        <div class="produkt_kort">
-          <img class="list_img" src="https://kea-alt-del.dk/t7/images/webp/640/1534.webp" alt="">
+       <section class="container">
+       <!-- <div class="produkt_kort">
+          <img class="list_img" src="https://kea-alt-del.dk/t7/images/webp/640/1534.webp" alt="" />
           <h3>overskrift</h3>
-          <div><p class="gray_txt">produkt</p>
-          <p>DKK 799,-</p>
-          <a href="produkt.html">Read more</a></div>
+          <div>
+            <p class="gray_txt">produkt</p>
+            <p>DKK 799,-</p>
+            <a href="produkt.html">Read more</a>
+          </div>
         </div>
 
         <div class="produkt_kort soldout">
-          <img class="list_img" src="https://kea-alt-del.dk/t7/images/webp/640/1571.webp?fbclid=IwY2xjawNAwFNleHRuA2FlbQIxMABicmlkETFkRTFkZnpJbnF1V3RuakEwAR5azFoeMSycKvm6J4QKq9rx7vDGI2JAfOZeC6nKbN3ih_f-pcTznAEqDcOYFQ_aem_O-yU3vptXW22-jeBt_AzKw" alt="">
+          <img
+            class="list_img"
+            src="https://kea-alt-del.dk/t7/images/webp/640/1571.webp?fbclid=IwY2xjawNAwFNleHRuA2FlbQIxMABicmlkETFkRTFkZnpJbnF1V3RuakEwAR5azFoeMSycKvm6J4QKq9rx7vDGI2JAfOZeC6nKbN3ih_f-pcTznAEqDcOYFQ_aem_O-yU3vptXW22-jeBt_AzKw"
+            alt=""
+          />
           <h3>overskrift</h3>
-           <p class="soldout_txt">SOLD OUT</p>
-          <div><p class="gray_txt">produkt</p>
-          <p>DKK 799,-</p>
-          <a href="produkt.html">Read more</a></div>
+          <p class="soldout_txt">SOLD OUT</p>
+          <div>
+            <p class="gray_txt">produkt</p>
+            <p>DKK 799,-</p>
+            <a href="produkt.html">Read more</a>
+          </div>
         </div>
 
         <div class="produkt_kort">
-          <img class="list_img" src="https://kea-alt-del.dk/t7/images/webp/640/1542.webp?fbclid=IwY2xjawNAwLRleHRuA2FlbQIxMABicmlkETFkRTFkZnpJbnF1V3RuakEwAR4BUF-xXOgUwP68dCgKbCXiE9w8aZHDLTfl9y9q46gQubRTgGTsM7sERTjz2A_aem_8hfcMgzdEExHAGCjwrCS4g" alt="">
+          <img
+            class="list_img"
+            src="https://kea-alt-del.dk/t7/images/webp/640/1542.webp?fbclid=IwY2xjawNAwLRleHRuA2FlbQIxMABicmlkETFkRTFkZnpJbnF1V3RuakEwAR4BUF-xXOgUwP68dCgKbCXiE9w8aZHDLTfl9y9q46gQubRTgGTsM7sERTjz2A_aem_8hfcMgzdEExHAGCjwrCS4g"
+            alt=""
+          />
           <span class="sale_badge">-30%</span>
           <h3>overskrift</h3>
-          <div><p class="gray_txt">produkt</p>
-          <p class="old_price">DKK 799,-</p>
-          <p class="new_price">DKK 559,-</p>
-          <a href="produkt.html">Read more</a></div>
+          <div>
+            <p class="gray_txt">produkt</p>
+            <p class="old_price">DKK 799,-</p>
+            <p class="new_price">DKK 559,-</p>
+            <a href="produkt.html">Read more</a>
+          </div>
         </div>
 
         <div class="produkt_kort soldout">
-          <img class="list_img" src="https://kea-alt-del.dk/t7/images/webp/640/1537.webp?fbclid=IwY2xjawNAwMNleHRuA2FlbQIxMABicmlkETFkRTFkZnpJbnF1V3RuakEwAR5azFoeMSycKvm6J4QKq9rx7vDGI2JAfOZeC6nKbN3ih_f-pcTznAEqDcOYFQ_aem_O-yU3vptXW22-jeBt_AzKw" alt="">
+          <img
+            class="list_img"
+            src="https://kea-alt-del.dk/t7/images/webp/640/1537.webp?fbclid=IwY2xjawNAwMNleHRuA2FlbQIxMABicmlkETFkRTFkZnpJbnF1V3RuakEwAR5azFoeMSycKvm6J4QKq9rx7vDGI2JAfOZeC6nKbN3ih_f-pcTznAEqDcOYFQ_aem_O-yU3vptXW22-jeBt_AzKw"
+            alt=""
+          />
           <span class="sale_badge">-30%</span>
           <h3>overskrift</h3>
           <p class="soldout_txt">SOLD OUT</p>
-          <div><p class="gray_txt">produkt</p>
-          <p class="old_price">DKK 799,-</p>
-          <p class="new_price">DKK 559,-</p>
-          <a href="produkt.html">Read more</a></div>
+          <div>
+            <p class="gray_txt">produkt</p>
+            <p class="old_price">DKK 799,-</p>
+            <p class="new_price">DKK 559,-</p>
+            <a href="produkt.html">Read more</a>
+          </div>
         </div>
-      </section>
+      </section> -->
     </main>
     <footer></footer>
   </body>

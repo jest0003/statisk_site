@@ -1,8 +1,10 @@
 const productSection = document.querySelector(".product-section");
-
-fetch("https://kea-alt-del.dk/t7/api/products/1534")
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
 .then(response => response.json())
-.then((product) => {
+.then(showProduct);
+    function showProduct(product) {
     console.log(product);
   productSection.innerHTML = `<section class="product-section">
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="Puma t-shirt" class="product-image" />
@@ -28,5 +30,5 @@ fetch("https://kea-alt-del.dk/t7/api/products/1534")
             <a href="#">Add to basket</a>
           </div>
       </section>
-      </section>`
-});
+      </section>`;
+}
